@@ -12,6 +12,8 @@ const forecast = require('../src/utils/forecast')
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 const publicDirectoryPath = path.join(__dirname,"../public");
 
 const viewDirectory = path.join(__dirname,"../template/views");
@@ -121,6 +123,6 @@ app.get('*',(req,res)=>{
 // 2.Setup an Weather route and render a page title,/ send Json
 // 3.test your work by visting both in the browser
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server is running on the Port 3000")
 })
