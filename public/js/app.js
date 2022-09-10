@@ -1,5 +1,5 @@
 
-console.log("connected the front end part");
+
 
 // fetch("http://localhost:3000/weather?address=hyderabad").then((response)=>{
 //     response.json().then((data)=>{
